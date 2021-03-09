@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
     ss.source_files = 'FSCalendar/*.{h,m}'
   end
 
-  #s.subspec 'Framework' do |ss|
-  #  ss.ios.vendored_framework   = 'ios/FSCalendar.framework'
-  #end
+  s.subspec 'Framework' do |ss|
+    ss.ios.vendored_framework   = 'ios/FSCalendar.framework'
+  end
 
   s.framework    = 'UIKit', 'QuartzCore'
 end
